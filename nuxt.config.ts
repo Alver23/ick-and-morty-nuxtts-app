@@ -1,3 +1,5 @@
+// import path from 'path';
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -11,8 +13,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  buildDir: 'dist',
-  srcDir: 'src/client/',
+  dev: process.env.NODE_ENV !== 'production',
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
@@ -56,4 +57,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-}
+  srcDir: 'src/client',
+  buildDir: 'build-client',
+  telemetry: false,
+};

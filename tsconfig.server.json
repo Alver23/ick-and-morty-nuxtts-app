@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es2017",
+    "isolatedModules": false,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@server/*": ["./src/server/*"],
+      "@shared/*": ["./src/shared/*"]
+    }
+  },
+  "include": ["./src/server/**/*.ts", "./src/shared/**/*.ts", "nuxt.config.ts"],
+  "exclude": ["node_modules", "./src/server/jest.config.ts"]
+}

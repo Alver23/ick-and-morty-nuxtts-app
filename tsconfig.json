@@ -13,9 +13,12 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./*"],
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@client/*": ["./src/client/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@server/*": ["./src/server/*"]
     },
     "types": ["@nuxt/types", "@nuxtjs/axios", "@types/node"]
   },
-  "exclude": ["node_modules", ".nuxt", "dist"]
+  "exclude": ["node_modules", ".nuxt", "dist", "src/server"]
 }

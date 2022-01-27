@@ -30,7 +30,7 @@
     "core-js": "^3.19.3",
     "cors": "^2.8.5",
     "debug": "^4.3.3",
-    "dotenv": "^11.0.0",
+    "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "express-healthcheck": "^0.1.0",
     "helmet": "^5.0.2",
